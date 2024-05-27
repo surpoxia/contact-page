@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <meta name="author" content="surpoxia">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main">
+        <img class="logo" src="img/contact-form-icon.svg" alt="becv-logo">
+        <div class="headline">
+            <h1>Interested in our business pricing?</h1>
+            <h2>Fill out the form to view details and we’ll contact you as soon as possible.</h2>
+        </div>
+        <form class="form-container" action="action_page.html" method="GET">
+            <div class="name">
+                <label class="label" for="name">Name</label>
+                <input class="text-field" type="text" id="name" placeholder="Ethan Johnson">
+            </div>
+            <div class="email">
+                <label class="label" for="email">Company Email</label>
+                <input class="text-field" type="email" id="name" placeholder="ethan@johnson.com">
+            </div>
+            <div class="company-size">
+                <label class="label" for="company-size">Company Size</label>
+                <select class="select-field" name="company-size" id="company-size">
+                    <option value="50-100">50-100 employees</option>
+                    <option value="100-500">100-500 employees</option>
+                    <option value="500-1000">500-1000 employees</option>
+                    <option value="1000-2500">1000-2500 employees</option>
+                    <option value="2500-5000">2500-5000 employees</option>
+                    <option value="5000-10000">5000-10000 employees</option>
+                </select>
+            </div>
+            <div class="subject">
+            <label class="label" for="subject">Subject</label>
+            <select class="select-field" name="subject" id="subject">
+                <option value="landing-pages">Building Landing pages</option>
+                <option value="100-500">Building Starting pages</option>
+                <option value="500-1000">500-1000 employees</option>
+                <option value="1000-2500">1000-2500 employees</option>
+                <option value="2500-5000">2500-5000 employees</option>
+                <option value="5000-10000">5000-10000 employees</option>
+            </select>
+            </div>
+            <div class="message">
+                <label class="label" for="message">Message</label>
+                <textarea class="message-field" name="message" id="message"></textarea>
+            </div>
+            <div class="button">
+                <button class="button" type="submit">Contact Sales</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

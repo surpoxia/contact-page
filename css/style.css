@@ -1,0 +1,155 @@
+:root {
+    --dark-text-1: #4036A9;
+    --dark-text-2: #111729;
+    --grey-text: #CDD5E0;
+    --form-background-white: #F8FAFC;
+    --white-text: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro";
+}
+
+body {
+    background-image: url("img/bg-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 1280px;
+    margin: 0 auto 150px auto;
+}
+
+
+.main {
+    width: 88%;
+    margin: 0 auto;
+    .logo {
+        height: 26px;
+        margin: 20px 0 44px 0;
+    }
+    .headline {
+        margin: 0 auto;
+        text-align: center;
+        color: var(--white-text);
+        width: 70%;
+        & h1 {
+            font-size: 64px;
+            line-height: 1.3;
+            margin-bottom: 16px;
+        }
+        & h2 {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 72px;
+        }
+    }
+    .form-container {
+        width: 810px;
+        margin: 0 auto;
+        padding: 32px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 18px;
+        row-gap: 24px;
+        .label {
+            font-size: 14px;
+            color: var(--white-text);
+        }
+        .text-field {
+            width: 100%;
+            padding: 24px 18px;
+            margin-top: 4px;
+            border: none;
+            border-radius: 18px;
+            color: var(--dark-text-2);
+            background-color: var(--form-background-white);
+            font-size: 16px;
+            font-weight: 800;
+            &::placeholder {
+                font-size: 16px;
+                font-weight: 800;
+                color: var(--grey-text);
+            }
+        }
+        .select-field {
+            width: 100%;
+            padding: 24px 18px;
+            margin-top: 4px;
+            border: none;
+            border-radius: 18px;
+            color: var(--dark-text-2);
+            background-color: var(--form-background-white);
+            font-size: 16px;
+            font-weight: 800;
+        }
+        .message {
+            grid-column: 1 / 3;
+            width: 100%;
+            .message-field {
+                grid-column: 1 / 3;
+                width: 100%;
+                height: 200px;
+                padding: 24px 18px;
+                margin-top: 4px;
+                border: none;
+                border-radius: 18px;
+                color: var(--dark-text-2);
+                background-color: var(--form-background-white);
+                font-size: 16px;
+                font-weight: 800;
+            }
+        }
+
+        .button {
+            grid-column: 1 / 3;
+            width: 100%;
+            height: 72px;
+            border: none;
+            border-radius: 18px;
+            color: var(--dark-text-1);
+            background-color: var(--form-background-white);
+            font-size: 20px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background-color: var(--dark-text-1);
+                color: var(--white-text);
+            }
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        height: 100vh;
+        width: 1024;
+        margin: 0 auto 150px auto;
+    }
+    .main {
+        margin: 0 auto;
+        .logo {
+            height: 32px;
+            margin: 20px auto;
+        }
+    }
+    .form-container {
+        color: red;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+body {
+    height: 100vh;
+    width: 640px;
+    margin: 0 auto 150px auto;
+    }
+}
